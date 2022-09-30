@@ -335,6 +335,10 @@ nav .head_social a i:hover {
     width: 100%;
     padding: 5vh;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .date {
@@ -387,14 +391,18 @@ nav .head_social a i:hover {
 
 .main_image {
     height: 50vh;
-    width: 100%;
+    width: 30%;
+    position: relative;
     margin: 0 auto;
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .main_image img {
     height: 100%;
     width: 100%;
+    border-radius: 5px;
+    filter: brightness(80%);
     object-fit: cover;
     transition: all .6s;
 }
@@ -419,6 +427,23 @@ nav .head_social a i:hover {
     padding: 0 10px;
     cursor: grab;
     animation: 2s shake infinite;
+}
+
+.resume {
+    text-decoration: none;
+    padding: 11px 27px;
+    border: 2px solid #193948;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 1vw;
+    color: var(--color1);
+    transition: all .2s;
+    margin: 10px 0;
+}
+
+.resume:hover {
+    border: 2px solid #e76268;
+    color: var(--color2);
 }
 
 @keyframes shake {
@@ -849,7 +874,6 @@ nav .head_social a i:hover {
 
 
 /*
-
 .pst {
     width: 90%;
     margin: 10vh 5vw;
@@ -863,7 +887,6 @@ nav .head_social a i:hover {
     flex-direction: column;
     padding: 10vh 10vw;
 }
-
 #pst_close {
     position: absolute;
     top: 5px;
@@ -872,38 +895,32 @@ nav .head_social a i:hover {
     color: var(--color2);
     cursor: pointer;
 }
-
 .pst_img {
     height: 50vh;
     width: 60%;
     overflow: hidden;
 }
-
 .pst_img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
 .pst h1 {
     color: var(--color1);
     font-size: 30px;
     text-align: center;
 }
-
 .pst p {
     margin: 3vh 0;
     font-size: 18px;
     color: var(--color1);
 }
-
 .pst code {
     background-color: var(--color1);
     color: #fff;
     border-radius: 5px;
     margin: 5vh 0;
 }
-
 */
 
 
